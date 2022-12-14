@@ -15,6 +15,13 @@
 
 void invalid_input(void)
 {
-	printf("\nError: Invalid input.\nPlease use the following format: ./philosopher 2 2 2 2 (a firth argument is optional)\n\n");
+	printf("\nError: Invalid input.\nPlease use the following format:");
+	printf("./philosopher 2 2 2 2 (a firth argument is optional)\n\n");
+	exit(0);
+}
+
+void value_error(void)
+{
+	printf("\nError: Arguments need to be positive intergers\n");
 	exit(0);
 }

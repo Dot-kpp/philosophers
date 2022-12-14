@@ -19,5 +19,6 @@ typedef struct s_data
 
 //error handling
 void invalid_input(void);
+void value_error(void);
 
 #endif

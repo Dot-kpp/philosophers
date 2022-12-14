@@ -25,12 +25,21 @@ t_data *get_data(void)
 // {
 
 // }
-ft_is_digit(int num)
+
+int convert_values(int argc, char **argv)
 {
-	if((c >= 9))
+	
 }
 
-int is_valid_num(int argc, char **argv)
+int ft_is_digit(int num)
+{
+	if((num <= '9') && (num >= '0'))
+		return(1);
+	else
+		return(0);
+}
+
+int is_valid_num(char **argv)
 {
 	int i;
 	int j;
@@ -39,8 +48,14 @@ int is_valid_num(int argc, char **argv)
 	while (argv[i])
 	{
 		j = 0;
-		while()
-		printf("%s", argv[i]);
+		while(argv[i][j])
+		{
+			if (!ft_is_digit(argv[i][j]))
+			{
+				invalid_input();
+			}
+			j++;
+		}
 		i++;
 	}
 	return(0);
@@ -50,13 +65,13 @@ int parse_for_init(int argc, char **argv)
 {
 	if (argc == 5)
 	{
-		if (is_valid_num(argc, argv))
+		if (is_valid_num(argv))
 			// init_data(argc, argv);
 			return(0);
 	}
 	if (argc == 6)
 	{
-		if (is_valid_num(argc, argv))
+		if (is_valid_num(argv))
 			return(0);
 			// init_data(argc, argv);
 	}
