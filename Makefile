@@ -9,21 +9,13 @@ SRCS = 	./src/philosophers.c ./src/error.c
 
 OBJ = $(SRCS:%c=%o)
 
-LIBFT = ./libft/libft.a
-
-all: $(LIBFT) $(NAME)
-
-$(LIBFT) :
-	@echo "Your libft is compiling"
-	@echo ""
-	@$(MAKE) -C libft
-	@echo ""
+all: $(NAME)
 
 $(NAME): $(OBJ)
 	@echo "Your shit is compiling"
 	@echo ""
 	@echo ""
-	@$(CC) $(CFLAGS) $(OBJ) $(LIBFT) -o philosophers
+	@$(CC) $(CFLAGS) $(OBJ) -o philosophers
 	@echo "Your shit is compiled"
 	@echo ""
 
@@ -33,7 +25,7 @@ clean:
 	@echo "(👍 ͡ ͜ʖ ͡)👍"
 
 fclean: clean
-	@rm -rf $(NAME) *.out *.exe ./src/*.o ./libft/*.a ./libft/src/*.o ./philosophers
+	@rm -rf $(NAME) *.out *.exe ./src/*.o ./philosophers
 	@echo ""
 	@echo "Your shit is clean af!"
 	@echo ""
