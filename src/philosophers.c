@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philosophers.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpilotte <jpilotte@student.42quebec.com    +#+  +:+       +#+        */
+/*   By: jpilotte <jpilotte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 19:53:53 by jpilotte          #+#    #+#             */
-/*   Updated: 2022/12/13 19:53:53 by jpilotte         ###   ########.fr       */
+/*   Updated: 2022/12/20 13:01:47 by jpilotte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ t_data *get_data(void)
 
 // }
 
-int convert_values(int argc, char **argv)
-{
+// int convert_values(int argc, char **argv)
+// {
 	
-}
+// }
 
 int ft_is_digit(int num)
 {
